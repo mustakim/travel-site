@@ -460,6 +460,11 @@ img {
     height: auto;
 }
 
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
 .large-hero{
     border-bottom: 10px solid #2f5572;
     position: relative;
@@ -585,4 +590,24 @@ img {
         max-width: 500px;
         margin-left: auto;
         margin-right: auto;
+    }
+
+.row::after{
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+.row__4 {
+        float: left;
+        width: 33.33%;
+    }
+
+.row__8 {
+        float: left;
+        width: 66.66%;
+    }
+
+.row__gutters > div {
+        padding-right: 65px;
     }
